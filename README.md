@@ -40,4 +40,3 @@ cols  = joblib.load("saved_models/feature_columns.joblib")
 sample = pd.DataFrame([[90, 42, 43, 20.8, 82.0, 6.5, 202.9]], columns=cols)
 print(le.inverse_transform(model.predict(sample))[0])
 ```
-Note: use the same scikit-learn version the model was trained with (see `requirements.txt`).
